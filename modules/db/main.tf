@@ -15,6 +15,9 @@ resource "aws_rds_cluster" "postgresql" {
   master_password         = var.master_password
   backup_retention_period = var.backup_retention_period
   storage_encrypted       = var.storage_encrypted
+
+  # skip_final_snapshot = true
+  # final_snapshot_identifier = "final-snapshot-my-db"
 }
 
 resource "aws_kms_key" "secret_manager_kms_key" {
