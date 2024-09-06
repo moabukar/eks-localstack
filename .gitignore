@@ -3,6 +3,7 @@ volume
 *.DS_Store
 *.pem
 *.crt
+*state.json
 
 # Local .terraform directories
 **/.terraform/*
